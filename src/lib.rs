@@ -423,11 +423,15 @@ pub mod merkle_helpers;
 /// Security assertion helpers for production validation.
 pub mod security_assertions;
 
-#[cfg(any(feature = "kani", test))]
+#[cfg(feature = "kani")]
 pub mod kani_harness;
 
 #[cfg(test)]
 mod normalize_share_tests;
+#[cfg(test)]
+mod test_utils;
+#[cfg(test)]
+mod proptest_helpers;
 #[cfg(test)]
 /// Self-test module providing a `self_test()` entrypoint that runs contract-internal
 #[cfg(test)]
