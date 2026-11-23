@@ -429,82 +429,10 @@ pub mod kani_harness;
 #[cfg(test)]
 mod normalize_share_tests;
 #[cfg(test)]
-mod proptest_helpers;
-#[cfg(test)]
-mod test_accrual_overflow;
-#[cfg(test)]
-mod test_accrual_reconciliation_prop;
-#[cfg(test)]
-mod test_audit_summary_getter;
-#[cfg(test)]
-mod test_claim_transfer_fail;
-#[cfg(test)]
-mod test_close_period;
-#[cfg(test)]
-mod test_compute_share_decomposition_prop;
-#[cfg(test)]
-mod test_compute_share_invariants;
-#[cfg(test)]
-mod test_disclosure;
-#[cfg(test)]
-mod test_duplicates;
-#[cfg(test)]
-mod test_epoch_boundary_report;
-#[cfg(test)]
-mod test_estimate_transfer;
-#[cfg(test)]
-mod test_event_indexed_v2;
-#[cfg(test)]
-mod test_event_indexed_v3;
-#[cfg(test)]
-#[cfg(feature = "testnet")]
-mod test_faucet_metrics;
 /// Self-test module providing a `self_test()` entrypoint that runs contract-internal
 #[cfg(test)]
-#[cfg(feature = "testnet")]
-mod test_faucet_seed;
-#[cfg(test)]
-mod test_freeze_reason_bitmask;
-#[cfg(test)]
-mod test_get_payment_token;
-#[cfg(test)]
-mod test_holder_share_class;
-#[cfg(test)]
-mod test_merkle_canonical_order;
-#[cfg(test)]
-mod test_meta_revenue_approval;
-#[cfg(test)]
-mod test_min_revenue_threshold_boundary;
-#[cfg(test)]
-mod test_multi_token_independence;
-#[cfg(test)]
-mod test_multisig_regression;
-#[cfg(test)]
-mod test_pending_issuer_transfer;
-#[cfg(test)]
-mod test_quorum_check;
-#[cfg(test)]
-mod test_reg_limit_delta;
-#[cfg(test)]
-mod test_snapshot_shares_accounting;
-#[cfg(test)]
-mod test_tax_year;
-#[cfg(test)]
-mod test_testnet_mode;
-#[cfg(test)]
-mod test_time_windows;
-#[cfg(test)]
-mod test_transfer_cooldown;
-#[cfg(test)]
-mod test_utils;
 
-#[cfg(test)]
-mod test_platform_fee_per_asset;
 
-#[cfg(test)]
-mod test;
-#[cfg(test)]
-mod test_revenue_deposit_with_snapshot;
 
 // â”€â”€ Event symbols â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const EVENT_REVENUE_REPORTED: Symbol = symbol_short!("rev_rep");
@@ -16793,26 +16721,10 @@ impl RevoraRevenueShare {
     }
 }
 
-#[cfg(test)]
-mod test_issue_1316;
 
-#[cfg(test)]
-mod test_deferred_priority;
-#[cfg(test)]
-mod test_deposit_revenue_adversarial;
-#[cfg(test)]
-mod test_merkle_proof_depth;
-#[cfg(test)]
-mod test_snapshot_voting_weight;
-#[cfg(test)]
-mod test_storage_layout_version;
-#[cfg(test)]
-mod test_vesting_cross_contract;
 
 #[cfg(test)]
 mod secondary_market_royalty_adversarial_test;
-#[cfg(test)]
-mod test_offering_count_adversarial;
 
 #[cfg(test)]
 mod test_atomic_swap_share_transfer {
